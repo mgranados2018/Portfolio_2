@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    line-height: 34px;
+    color: #777777;
+    background-color: black;
+}
+
+/* navbar */
+
+.navbar{
+    width: 100%;
+}
+#navname{
+    margin-left: 5%;
+    height: 100%;
+    text-emphasis:20px;
+}
+/* main content */
+
+img {
+    width: 100%;
+    height: 10%;
+    radius: 50%;
+}
+
+#mainimg{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container{
+    padding-top: 20px;
+}
+
+#p1{
+    float:right;
+}
+
+
+/* Form */
+
+input[type=text],
+input[type=email],
+textarea {
+  height: 35px;
+  padding: 0 10px;
+  font-size: 14px;
+  border: 1px solid #dddddd;
+}
+
+textarea {
+  height: 200px;
+}
+
+input[type=submit] {
+  padding: 10px 30px;
+  font-size: 18px;
+  color: #ffffff;
+  cursor: pointer;
+  background: #4aaaa5;
+  border: 0 none;
+}
+
+.btn{
+    background: #4aaaa5;
+    color: #ffffff;
+}
+
+/* footer */
+
+.page-footer{
+    padding: 20px 0;
+}
+#footer{
+    border-top:2px solid;
+    width: 100%;
+
+}
+
+.footer-copyright{
+    color: #ffffff;
+}
+
+
