@@ -2,88 +2,87 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Navbar -->
-    <header id="H1-Header">
-        <div class="H-Container">
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <a class="navbar-brand mb-0 h1" href="index.html" id="navname">Marisol Granados</a>
-                <!-- <span class="navbar-brand mb-0 h1"> Marisol Granados</span> -->
+  <!-- Navbar -->
+  <header id="H1-Header">
+    <div class="H-Container">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand mb-0 h1" href="index.html" id="navname">Marisol Granados</a>
+        <!-- <span class="navbar-brand mb-0 h1"> Marisol Granados</span> -->
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html">About |<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="portfolio.html">Portfolio |<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="contact.html">Contact |<span class="sr-only">(current)</span></a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">About |<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="portfolio.html">Portfolio |<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="contact.html">Contact |<span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
         </div>
-    </header>
+      </nav>
+    </div>
+  </header>
 
   <div class="container">
 
 
-      <!-- <div id="Form1" class="Form"> -->
-        <form>
-          <div class="page-header">
-            <h1>Contact</h1>
-          </div>
-          
-          <div class="form-group">
-            <label for="InputName">Name</label>
-            <input type="Name" class="form-control" id="InputName" placeholder="Enter name">
-          </div>
-          <div class="form-group">
-            <label for="InputEmail">Email</label>
-            <input type="Email" class="form-control" id="InputEmail" placeholder="Enter email">
-          </div>
-          <div class="form-group">
-            <label for="InputMessage">Message</label>
-            <textarea class="form-control" id="InputMessage" placeholder="Enter message" rows="6"></textarea>
-          </div>
-          <button type="submit" class="btn">Submit</button>
-        </form>
+    <!-- <div id="Form1" class="Form"> -->
+    <form action="/api/create" method="POST">
+      <div class="page-header">
+        <h1>Contact</h1>
+      </div>
 
+      <div class="form-group">
+        <label for="InputName">Name</label>
+        <input name="name" type="text" class="form-control" id="name" placeholder="Enter name">
+      </div>
+      <div class="form-group">
+        <label for="InputEmail">Email</label>
+        <input name="email" type="text" class="form-control" id="email" placeholder="Enter email">
+      </div>
+      <div class="form-group">
+        <label for="InputMessage">Message</label>
+        <textarea name="message" class="form-control" id="message" placeholder="Enter message" rows="6"></textarea>
+      </div>
+      <input type="submit" id="ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q">
+    </form>
   </div>
 
   <footer class="page-footer aria-expanded font-small" id="footer">
-      <div class="footer-copyright text-center" py-3>@2018 Copyright</div>
+    <div class="footer-copyright text-center" py-3>@2018 Copyright</div>
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-  crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-  crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-  crossorigin="anonymous"></script> 
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+  <script src="index.js" type="text/javascript"></script>
 
 </body>
-
-
 
 </html>
